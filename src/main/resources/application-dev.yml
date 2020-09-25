@@ -1,0 +1,27 @@
+
+server:
+  port: 8080
+  
+spring:
+  profiles: dev
+  jpa:
+    show-sql: false
+    open-in-view: false
+    properties:
+      hibernate.format_sql: false  
+
+  datasource:
+    url: jdbc:mysql://
+    username: 
+    password: 
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    initial-size: 10
+    time-between-eviction-runs-millis: 10000
+
+info-bip:
+  url: 
+  auth: ""
+  sender-key: 
+  scenario-key: 
+  from: ""
